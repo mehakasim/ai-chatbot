@@ -7,7 +7,7 @@ A modern, beautiful AI chat application built with Next.js 14, tRPC, Supabase, a
 ## ✨ Features
 
 - 🔐 **Email/Password Authentication** with Supabase Auth
-- 🤖 **Multiple AI Models** - Choose from GPT-4, GPT-3.5, Claude, and more
+- 🤖 **Multiple AI Models** - Choose from different Gemini Models
 - 💬 **Real-time Chat** - Smooth, responsive chat interface
 - 📱 **Mobile Responsive** - Works beautifully on all devices
 - 🌓 **Dark/Light Mode** - Toggle between themes
@@ -87,11 +87,11 @@ CREATE INDEX idx_messages_created_at ON messages(created_at DESC);
 
 -- Sample models
 INSERT INTO models (tag, name, description) VALUES
-  ('gpt-4o', 'GPT-4 Omni', 'Most capable model with vision and advanced reasoning'),
-  ('gpt-4-turbo', 'GPT-4 Turbo', 'Fast and capable for complex tasks'),
-  ('gpt-3.5-turbo', 'GPT-3.5 Turbo', 'Fast and efficient for most tasks'),
-  ('claude-3-opus', 'Claude 3 Opus', 'Anthropic most capable model'),
-  ('claude-3-sonnet', 'Claude 3 Sonnet', 'Balanced performance and speed');
+  ('gemini-2.5-pro', 'Gemini 2.5 Pro', 'Cutting-edge reasoning & long context'),
+  ('gemini-2.5-flash', 'Gemini 2.5 Flash', 'Best price-to-performance'),
+  ('gemini-2.5-flash-lite', 'Gemini 2.5 Flash Lite', 'Ultra fast and low-cost'),
+  ('gemini-2.0-flash', 'Gemini 2.0 Flash', '2nd gen, 1M token context window'),
+  ('gemini-2.0-flash-lite', 'Gemini 2.0 Flash Lite', '2nd gen small + powerful');
 ```
 
 ### 3. Environment Variables
