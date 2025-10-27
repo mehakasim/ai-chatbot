@@ -36,7 +36,6 @@ Open [http://localhost:3000](http://localhost:3000) in your browser!
 
 - Node.js 18+ installed
 - A Supabase account (free tier works)
-- Optional: OpenAI API key (for real AI responses)
 
 ## 🔧 Detailed Setup
 
@@ -104,8 +103,8 @@ NEXT_PUBLIC_SUPABASE_URL=your_supabase_project_url
 NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
 SUPABASE_SERVICE_ROLE_KEY=your_service_role_key
 
-# OpenAI (Optional - app works with stub responses if not provided)
-OPENAI_API_KEY=your_openai_api_key
+# GEMINI API KEY
+GOOGLE_GENERATIVE_AI_API_KEY=your_gemini_api_key
 ```
 
 ### 4. Run the App
@@ -136,7 +135,7 @@ The chat router (`server/routers/chat.ts`) provides context-aware responses base
 - ✅ All features work identically to a real AI chat
 
 **To add real AI later** (optional):
-- Add OpenAI, Anthropic, or other AI provider API
+- Add Gemini AI, Anthropic, or other AI provider API
 - Update the response generation logic in `server/routers/chat.ts`
 - The rest of the app works exactly the same!
 
@@ -180,7 +179,7 @@ ai-chat-app/
 - **Auth**: Supabase Auth
 - **Styling**: Tailwind CSS + shadcn/ui
 - **State**: Zustand (theme), React Query (server state)
-- **AI**: OpenAI API
+- **AI**: Gemini API
 - **Icons**: Lucide React
 
 ## ✅ Acceptance Criteria Met
