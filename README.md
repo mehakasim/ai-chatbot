@@ -201,21 +201,6 @@ ai-chat-app/
 - ✅ **Beautiful gradients** - Modern UI with smooth animations
 - ✅ **Message timestamps** - Shows when each message was sent
 
-## 🚢 Deployment
-
-### Deploy to Vercel
-
-1. Push your code to GitHub
-2. Import project to Vercel
-3. Add environment variables in Vercel dashboard
-4. Deploy!
-
-```bash
-# Or use Vercel CLI
-npm i -g vercel
-vercel
-```
-
 ## 🐛 Troubleshooting
 
 **Auth not working?**
@@ -231,9 +216,6 @@ vercel
 - Make sure auth token is being set in localStorage
 - Check browser console for detailed errors
 
-## 📝 License
-
-MIT
 
 ## 👨‍💻 Author
 
